@@ -4,6 +4,7 @@ typedef struct STRING *string;// Declaração do tipo string usando a <stdlib.h>
 void main()//Método Principal da linguagem C
 {    
     printf("%d Meu primeiro programa em C\n",10);
+   
     /*Especificadores de Formato
     %c Especifica um char
     %d Especifica um int
@@ -13,6 +14,7 @@ void main()//Método Principal da linguagem C
     %g Especifica um double (ou float) no formato mais apropriado (%f ou %e)
     %s Especifica uma cadeia de caractere
     */
+ 
    /*Operadores unários em C
     operador/Exemplo/Ação
     +=      / a+=b    / a recebe o resultado da soma de a com b
@@ -34,27 +36,5 @@ scanf("%s",&nome);
 printf("Olá,%s\n",nome);
 */ 
 
-// Utilizando Condicionais
-/*
-int numero=9;
-if(numero<=9){
-printf("O numero digitado nao e maior que 10");
-}else{
-printf("O numero e maior ou igual 10");
-}
-*/
-    /*
-        int x,i,soma=0;
-        int y=10;
-    for(i=0; i<y; i++)
-    {
-        printf("Digiteo item %d",i);
-        scanf("%d",&x);
-        soma=soma+x;
-    y=y--;
-    }   
-printf("TORAL: %d",soma);
-
-    */
 
 }
