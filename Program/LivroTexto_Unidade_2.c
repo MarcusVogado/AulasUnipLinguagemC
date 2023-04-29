@@ -35,21 +35,26 @@ printf("Olá,%s\n",nome);
 */ 
 
 // Utilizando Condicionais
-/*int numero=9;
+/*
+int numero=9;
 if(numero<=9){
 printf("O numero digitado nao e maior que 10");
 }else{
 printf("O numero e maior ou igual 10");
-}*/
-int x,i,soma=0;
-int y=10;
-for(i=0; i<y; i++)
-{
-    printf("Digiteo item %d",i);
-    scanf("%d",&x);
-    soma=soma+x;
-    y=y--;
 }
+*/
+    /*
+        int x,i,soma=0;
+        int y=10;
+    for(i=0; i<y; i++)
+    {
+        printf("Digiteo item %d",i);
+        scanf("%d",&x);
+        soma=soma+x;
+    y=y--;
+    }   
 printf("TORAL: %d",soma);
+
+    */
 
 }
