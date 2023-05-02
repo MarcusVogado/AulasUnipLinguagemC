@@ -51,7 +51,18 @@ do {
 while (x>y);
 
 //Comando BREAK serve para parar a execução de uma estrutura de repetição 
-
-
-
+printf("COMANDO BREAK\n");
+int h = 0, soma = 0, z;
+while (h < 10) {
+    printf("Digite o item %d", h);
+    scanf("%d", &z);
+    if (z < 0){
+        printf("Número Inválido!");
+            break;
+    }
+    soma=soma+z;
+        h++;
 }
+printf("TOTAL: %d\n", soma);
+}
+
