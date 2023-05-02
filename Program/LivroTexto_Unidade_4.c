@@ -51,7 +51,7 @@ do {
 while (x>y);
 
 //Comando BREAK serve para parar a execução de uma estrutura de repetição 
-printf("COMANDO BREAK\n");
+/*printf("COMANDO BREAK\n");
 int h = 0, soma = 0, z;
 while (h < 10) {
     printf("Digite o item %d", h);
@@ -64,5 +64,33 @@ while (h < 10) {
         h++;
 }
 printf("TOTAL: %d\n", soma);
+*/
+
+//Laços Aninhados
+//São laços de repetições dentro de outro laço- exemplo:  um relogio que precisa chegar a 60 segundos para marca 1 minuto e 60  minutos para 1 hora 
+printf("LAÇOS ANINHADOS\n");
+int w,j,u;
+    for(w=0;w<3;w++)
+    {
+        for(j=0;j<60;j++)
+        {
+            for(u=0;u<60;u++)
+            {
+                printf("%d-%d-%d\n",w,j,u);
+            }        
+        }
+    }
+int linha, coluna; linha=1;
+printf("WHILE ANINHADO\n");
+while(linha<5)
+{
+    coluna=1;
+    while(coluna<5)
+    {
+        printf("%d",linha*coluna);
+        coluna+=1;
+    }
+    linha=linha+1;
+}
 }
 
