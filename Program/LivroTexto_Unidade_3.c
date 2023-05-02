@@ -51,6 +51,7 @@ printf("O numero e maior ou igual 10");
         printf("Valor inválido");
     } */
     //Cauculadora simples
+    /*
 float num1, num2;
  char op;
    printf("Digite: numero + op + numero\n");
@@ -76,5 +77,5 @@ float num1, num2;
  default:
  printf("Operador invalido!\n");
  break;
- }
+ }*/ 
 }
