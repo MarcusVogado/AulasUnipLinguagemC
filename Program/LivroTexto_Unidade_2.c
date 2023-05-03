@@ -1,8 +1,9 @@
 #include <stdio.h>//Estrutura Base da linguagem C onde chamamos as bibliotecas
 #include <stdlib.h>
+#include <locale.h>
 typedef struct STRING *string;// Declaração do tipo string usando a <stdlib.h>
 void main()//Método Principal da linguagem C
-{    
+{   setlocale(LC_ALL,"Portuguese");
     printf("%d Meu primeiro programa em C\n",10);
    
     /*Especificadores de Formato
