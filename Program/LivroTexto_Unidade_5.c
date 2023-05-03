@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 void main()
 {
 //VETORES
@@ -29,6 +30,12 @@ int matriz[2][3]={{1,3},{3,4}};
 //CADEIAS -STRINGS
 /*
 Em C Strings são estruturas repesentadas por vetores do tipo CHAR e obrigatoriamente terminadas por ('\0') barra invertida zero.
+Manipulando STRINGS
+getchar()- lê um caractere do teclado
+putchar()- imprime um caractere na tela
+gets()-lê uma string do teclado
+puts()- imprime a string na tela
+diferença do puts para printf é que no printf conseguimos tratar a informação e no puts ele simplesmente irá imprimir a informação sem tratamento.
 */
 printf("CADEIAS -STRIGNS\n");
 char faculdade[5];
@@ -39,4 +46,17 @@ faculdade[3]='p';
 faculdade[4]='\0';
 printf("%s\n",faculdade);
 
+char cadeia[256];
+printf("Digite seu nome:\n");
+gets(cadeia);
+puts(cadeia);
+printf("Seu nome é: %s\n",cadeia);
+
+//UTILIZANDO INCLUDE <STRING.H>
+int tam;
+char str[100];
+printf("Digite string: ");
+gets(str);
+tam=strlen(str);
+printf("Tamano da string é: %d\n",tam);
 }
