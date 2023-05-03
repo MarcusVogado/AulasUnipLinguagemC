@@ -1,5 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+struct Pessoa{
+    char nome[50];
+    int idade;
+    float altura;
+    float peso;
+
+};
 void main()
 {
 //VETORES
@@ -59,4 +66,21 @@ printf("Digite string: ");
 gets(str);
 tam=strlen(str);
 printf("Tamano da string é: %d\n",tam);
+
+//DADOS HETEROGÊNEOS
+/*
+Estrutura conhecida por envolver mais de um tipo de dados, também conhecidos como registros.
+*/
+
+ struct Pessoa  p1;
+{
+    p1.nome='Marcus';
+    p1.idade=29;
+    p1.altura=1.82;
+    p1.peso=110.00;
+
+}
+printf("Cadastrado: %s",p1.nome);
+
+
 }
