@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-struct Pessoa{
-    char nome[50];
-    int idade;
-    float altura;
-    float peso;
-
+struct novo_tipo
+{
+   int dado;
+   float valor;
 };
+
 void main()
 {
 //VETORES
@@ -32,7 +31,9 @@ for(i=0;i<5;i++)
 São estruturas de dados do tipo vetor com duas ou mais dimensões conhecido por Multidimensional
 indexadas que podem armazenar uma determinada quantidade de valores do mesmo tipo
 */
-int matriz[2][3]={{1,3},{3,4}};
+int matriz[2][3]={{1,3,6},
+                  {3,4,4},
+                 };
 
 //CADEIAS -STRINGS
 /*
@@ -71,16 +72,8 @@ printf("Tamano da string é: %d\n",tam);
 /*
 Estrutura conhecida por envolver mais de um tipo de dados, também conhecidos como registros.
 */
-
- struct Pessoa  p1;
-{
-    p1.nome='Marcus';
-    p1.idade=29;
-    p1.altura=1.82;
-    p1.peso=110.00;
-
-}
-printf("Cadastrado: %s",p1.nome);
-
-
+struct novo_tipo variavel;
+variavel.dado=10;
+variavel.valor=22.22;
+printf("%d:%.2f",variavel.dado,variavel.valor);
 }
